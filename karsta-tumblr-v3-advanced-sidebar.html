@@ -265,6 +265,12 @@
             border-radius: 14px;
             overflow: hidden;
             box-shadow: var(--shadow-soft);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .entry:hover {
+            transform: translateY(-3px);
+            border-color: rgba(197,160,89,0.36);
         }
 
         .entry-media {
