@@ -9,6 +9,7 @@
         /* =========================================================
            KARSTA / THEME SYSTEM: elite dashboard palette + scientific archive layout
            - Fixed left sidebar for navigational persistence
+           - Fixed right sidebar for geographic index
            - Card-based content runway for high-density photography/archive entries
            - Metadata ledger rows to mimic research dashboards and field logs
            ========================================================= */
@@ -89,7 +90,7 @@
         }
 
         /* =========================================================
-           SIDEBAR: fixed, persistent, bilingual navigation shell
+           SIDEBAR (LEFT): fixed, persistent, bilingual navigation shell
            ========================================================= */
         .sidebar {
             position: fixed;
@@ -241,11 +242,83 @@
         }
 
         /* =========================================================
+           SIDEBAR (RIGHT): geographic index
+           ========================================================= */
+        .sidebar-right {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: var(--sidebar-width);
+            height: 100vh;
+            padding: 22px 18px 18px;
+            background: rgba(12,18,24,0.82);
+            border-left: 1px solid var(--line-soft);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 40;
+            overflow-y: auto;
+        }
+
+        html[data-theme="light"] .sidebar-right {
+            background: rgba(255,255,255,0.8);
+        }
+
+        .geo-index-title {
+            margin: 0 0 18px;
+            font-family: var(--font-clinical);
+            font-size: 0.76rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--karsta-gold);
+        }
+
+        .geo-category {
+            margin-bottom: 20px;
+        }
+
+        .geo-category-title {
+            margin: 0 0 10px;
+            font-family: var(--font-clinical);
+            font-size: 0.65rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .geo-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .geo-link {
+            display: block;
+            padding: 8px 10px;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--text-primary);
+            font-family: var(--font-clinical);
+            font-size: 0.62rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.25s ease;
+        }
+
+        .geo-link:hover {
+            background: rgba(197,160,89,0.08);
+            color: var(--karsta-gold);
+            border-bottom: none;
+        }
+
+        /* =========================================================
            CONTENT: high-density card runway
            ========================================================= */
         .content {
             margin-left: var(--sidebar-width);
-            width: calc(100% - var(--sidebar-width));
+            margin-right: var(--sidebar-width);
+            width: calc(100% - calc(2 * var(--sidebar-width)));
             padding: 28px 26px 42px;
         }
 
@@ -470,6 +543,17 @@
             color: var(--text-muted);
         }
 
+        @media (max-width: 1280px) {
+            .sidebar-right {
+                display: none;
+            }
+
+            .content {
+                margin-right: 0;
+                width: calc(100% - var(--sidebar-width));
+            }
+        }
+
         @media (max-width: 980px) {
             .layout {
                 display: block;
@@ -483,8 +567,18 @@
                 border-bottom: 1px solid var(--line-soft);
             }
 
+            .sidebar-right {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-left: none;
+                border-top: 1px solid var(--line-soft);
+                padding: 18px 18px 22px;
+            }
+
             .content {
                 margin-left: 0;
+                margin-right: 0;
                 width: 100%;
                 padding: 22px 14px 42px;
             }
@@ -529,6 +623,81 @@
                 <div class="side-footer">
                     <p>KARSTA v1.0</p>
                     <p>Geographic Data Engine</p>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="sidebar-right">
+            <h3 class="geo-index-title">Geographic Index</h3>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Europe</div>
+                <div class="geo-list">
+                    <a href="/tagged/croatia" class="geo-link">Croatia</a>
+                    <a href="/tagged/iceland" class="geo-link">Iceland</a>
+                    <a href="/tagged/united-kingdom" class="geo-link">United Kingdom</a>
+                    <a href="/tagged/scandinavia" class="geo-link">Scandinavia</a>
+                    <a href="/tagged/balkans" class="geo-link">Balkans</a>
+                    <a href="/tagged/alps" class="geo-link">Alps</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Africa</div>
+                <div class="geo-list">
+                    <a href="/tagged/tanzania" class="geo-link">Tanzania</a>
+                    <a href="/tagged/kenya" class="geo-link">Kenya</a>
+                    <a href="/tagged/south-africa" class="geo-link">South Africa</a>
+                    <a href="/tagged/egypt" class="geo-link">Egypt</a>
+                    <a href="/tagged/madagascar" class="geo-link">Madagascar</a>
+                    <a href="/tagged/sahara" class="geo-link">Sahara</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Asia</div>
+                <div class="geo-list">
+                    <a href="/tagged/japan" class="geo-link">Japan</a>
+                    <a href="/tagged/himalayas" class="geo-link">Himalayas</a>
+                    <a href="/tagged/southeast-asia" class="geo-link">Southeast Asia</a>
+                    <a href="/tagged/siberia" class="geo-link">Siberia</a>
+                    <a href="/tagged/middle-east" class="geo-link">Middle East</a>
+                    <a href="/tagged/india" class="geo-link">India</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Americas</div>
+                <div class="geo-list">
+                    <a href="/tagged/amazon" class="geo-link">Amazon</a>
+                    <a href="/tagged/patagonia" class="geo-link">Patagonia</a>
+                    <a href="/tagged/canada" class="geo-link">Canada</a>
+                    <a href="/tagged/mexico" class="geo-link">Mexico</a>
+                    <a href="/tagged/andes" class="geo-link">Andes</a>
+                    <a href="/tagged/caribbean" class="geo-link">Caribbean</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Oceania</div>
+                <div class="geo-list">
+                    <a href="/tagged/australia" class="geo-link">Australia</a>
+                    <a href="/tagged/new-zealand" class="geo-link">New Zealand</a>
+                    <a href="/tagged/pacific" class="geo-link">Pacific Islands</a>
+                    <a href="/tagged/coral-triangle" class="geo-link">Coral Triangle</a>
+                    <a href="/tagged/papua-new-guinea" class="geo-link">Papua New Guinea</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Biomes</div>
+                <div class="geo-list">
+                    <a href="/tagged/rainforest" class="geo-link">Rainforest</a>
+                    <a href="/tagged/tundra" class="geo-link">Tundra</a>
+                    <a href="/tagged/desert" class="geo-link">Desert</a>
+                    <a href="/tagged/savanna" class="geo-link">Savanna</a>
+                    <a href="/tagged/temperate" class="geo-link">Temperate</a>
+                    <a href="/tagged/marine" class="geo-link">Marine</a>
                 </div>
             </div>
         </aside>
@@ -645,7 +814,7 @@
                     <div class="entry-body">
                         <h3 class="entry-title">Field Observation</h3>
                         <p class="entry-subhead">Archive / Reflective Entry</p>
-                        <div class="entry-copy">“{Quote}”</div>
+                        <div class="entry-copy">"{Quote}"</div>
                         <div class="entry-copy">{Source}</div>
 
                         <div class="ledger">
