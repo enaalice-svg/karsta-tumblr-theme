@@ -1,331 +1,613 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
+<!-- --- MASTER KARSTA ATLAS ANIMATED FAVICON --- -->
+<link rel="icon" type="image/gif" sizes="16x16 32x32" href="https://img.icons8.com/?size=100&id=czRHu7mh4l5d&format=png&color=000000">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{MetaDescription}">
     <title>{Title}</title>
-  
-    <!-- PASTE BLANK TEXT SLOTS FOR TARGET REFACTORING HERE -->
+<meta name="text:Specimens Archived" content="0">
+<!-- Tumblr Theme Customization Options -->
+<meta name="color:Accent Gold" content="#C5A059">
+<meta name="color:Dark Background" content="#1D2633">
+<meta name="color:Pane Background" content="#2A3649">
+<meta name="color:Text Primary" content="#FFFFFF">
+<meta name="color:Text Muted" content="#8E9BAE">
+<meta name="color:Light Background" content="#F4F6F9">
+<meta name="color:Light Text" content="#121824">
 
+<meta name="if:Dark Mode" content="1">
+<meta name="if:Show Atlas Grid" content="1">
+<meta name="if:Rounded Corners" content="1">
+
+<meta name="text:Sidebar Width" content="18vw">
+<meta name="text:Posts Per Row" content="3">
+<meta name="text:Blog Tagline" content="Scientific Geographic Sandbox">
+
+<meta name="select:Theme Style" content="clinical">
+<meta name="select:Theme Style:clinical" content="clinical">
+<meta name="select:Theme Style:minimal" content="minimal">
+<meta name="select:Theme Style:bold" content="bold">
+
+   <!--STYLE SLOT-->
+    
 </head>
 <body>
+
     <div class="layout">
+
         <aside class="sidebar">
             <div class="sidebar-inner">
                 <div>
-                    <div class="brand-shell">
-                        <div class="brand-avatar">
-                            <img src="{PortraitURL-128}" alt="{Title}">
+                    <div class="profile-station">
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <img src="{PortraitURL-512}" alt="Karsta Atlas Logo" style="width: 100%; height: auto; display: block;">
+                            </div>
+                            <h1 class="profile-name">{Title}</h1>
+                            <p class="profile-subtitle">Scientific Geographic Sandbox</p>
                         </div>
-                        <h1 class="brand-title">{Title}</h1>
-                        <p class="brand-copy">Scientific Geographic Sandbox</p>
                     </div>
 
-                    <nav class="nav-wrap" aria-label="Main navigation">
-                        <a class="nav-link active" href="/"><span class="nav-sigil">[🔒]</span> MAIN_CORE</a>
-                        <a class="nav-link" href="/tagged/geographic"><span class="nav-sigil">[🌐]</span> GEOGRAPHIC_ATLAS</a>
-                        <a class="nav-link" href="/tagged/fauna"><span class="nav-sigil">[🌿]</span> FAUNA_LOGS</a>
-                        <a class="nav-link" href="/tagged/stressors"><span class="nav-sigil">[⚠️]</span> REGIONAL_STRESSORS</a>
-                        <a class="nav-link" href="/archive"><span class="nav-sigil">[📷]</span> PHOTO_ARCHIVE</a>
-                    </nav>
+                   <a class="nav-link active" href="/">
+    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 11l3 3 5-5"/></svg>
+    <span>MAIN_CORE</span>
+</a>
+<a class="nav-link" href="/tagged/geographic">
+    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="3"/></svg>
+    <span>GEOGRAPHIC_ATLAS</span>
+</a>
+<a class="nav-link" href="/tagged/fauna">
+    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 3c0 2-2 4-4 4s-4-2-4-4M12 3c0 2 2 4 4 4s4-2 4-4M8 9c-1 2-2 5-2 8 0 4 2 6 6 6s6-2 6-6c0-3-1-6-2-8"/></svg>
+    <span>FAUNA_LOGS</span>
+</a>
+<a class="nav-link" href="/tagged/stressors">
+    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5l2-5z"/><path d="M12 11v8"/></svg>
+    <span>REGIONAL_STRESSORS</span>
+</a>
+<a class="nav-link" href="/archive">
+    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M9 8h6M9 16h6"/></svg>
+    <span>PHOTO_ARCHIVE</span>
+</a>
+<a class="nav-link" id="hubLink" href="/#hub">
+    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M12 3v9M21 12h-9M12 21v-9M3 12h9"/><path d="M15 9l-3-3-3 3"/></svg>
+    <span>NAVIGATION_HUB</span>
+</a>
 
-                    <div class="theme-wrap">
-                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                            <span class="toggle-dark">🌙 Dark Mode / Tamni Režim</span>
-                            <span class="toggle-light">☀️ Light Mode / Svijetli Režim</span>
+<!-- --- SYSTEM NAVIGATION: ABOUT OPERATOR (PERFECT INTEGRATION) --- -->
+<a href="#operator" class="nav-item-row" id="operator-manifest-trigger">
+    <span class="nav-icon">[ ❓ ]</span>
+    <span class="nav-label-text">SYSTEM_OPERATOR</span>
+</a>
+
+
+
+                    <div class="theme-toggle-wrap">
+                    
+                    
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+                            <span class="toggle-text toggle-label-dark">🌙 Dark Mode</span>
+                            <span class="toggle-text toggle-label-light">☀️ Light Mode</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="side-footer">
-                    <p>KARSTA v1.0</p>
-                    <p>Geographic Data Engine</p>
+                <div class="sidebar-footer">
+                    <p class="footer-line">KARSTA v1.0</p>
+                    <p class="footer-line">Geographic Data Engine</p>
                 </div>
             </div>
         </aside>
 
-        <aside class="sidebar-right">
-            <h3 class="geo-index-title">Geographic Index</h3>
-
-            <div class="geo-category">
-                <div class="geo-category-title">Europe</div>
-                <div class="geo-list">
-                    <a href="/tagged/croatia" class="geo-link">Croatia</a>
-                    <a href="/tagged/iceland" class="geo-link">Iceland</a>
-                    <a href="/tagged/united-kingdom" class="geo-link">United Kingdom</a>
-                    <a href="/tagged/scandinavia" class="geo-link">Scandinavia</a>
-                    <a href="/tagged/balkans" class="geo-link">Balkans</a>
-                    <a href="/tagged/alps" class="geo-link">Alps</a>
+        <main class="content-runway" id="main-content">
+            <header class="archive-header">
+                <h2 class="archive-heading">Scientific Geographic Sandbox</h2>
+                <p class="archive-subheading">Field photography archive • spatial data logs • conservation observation index</p>
+                <div class="signal-row">
+                    <span class="signal-pill">System online</span>
+                    <span class="signal-pill">Data verified</span>
+                    <span class="signal-pill">Archive active</span>
                 </div>
-            </div>
+                
+                
+                </header>
+                
+                
+                <!-- --- ANTHROPOGENIC INDEX MODULE --- -->
+<div class="sidebar-registry-section" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--border-soft);">
+    <h5 style="font-family: var(--font-clinical); font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.6rem;">
+        // INDEX: ANTHROPOGENIC_TELEMETRY
+    </h5>
+    
+    <div class="anthropogenic-tag-cloud" style="display: flex; flex-direction: column; gap: 0.35rem;">
+        <!-- ARCHITECTURE SEGMENT -->
+        <div class="index-row" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/tagged/arch-ottoman" class="tag-badge-anthropogenic">🏛️ arch-ottoman</a>
+            <span style="font-family: var(--font-clinical); font-size: 0.55rem; color: var(--text-muted);">[STRUCT]</span>
+        </div>
+        <div class="index-row" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/tagged/arch-gothic" class="tag-badge-anthropogenic">🏛️ arch-gothic</a>
+            <span style="font-family: var(--font-clinical); font-size: 0.55rem; color: var(--text-muted);">[STRUCT]</span>
+        </div>
 
-            <div class="geo-category">
-                <div class="geo-category-title">Africa</div>
-                <div class="geo-list">
-                    <a href="/tagged/tanzania" class="geo-link">Tanzania</a>
-                    <a href="/tagged/kenya" class="geo-link">Kenya</a>
-                    <a href="/tagged/south-africa" class="geo-link">South Africa</a>
-                    <a href="/tagged/egypt" class="geo-link">Egypt</a>
-                    <a href="/tagged/madagascar" class="geo-link">Madagascar</a>
-                    <a href="/tagged/sahara" class="geo-link">Sahara</a>
-                </div>
-            </div>
+        <!-- FINE ART SEGMENT -->
+        <div class="index-row" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/tagged/art-calligraphy" class="tag-badge-anthropogenic">🎨 art-calligraphy</a>
+            <span style="font-family: var(--font-clinical); font-size: 0.55rem; color: var(--text-muted);">[ETHNO]</span>
+        </div>
 
-            <div class="geo-category">
-                <div class="geo-category-title">Asia</div>
-                <div class="geo-list">
-                    <a href="/tagged/japan" class="geo-link">Japan</a>
-                    <a href="/tagged/himalayas" class="geo-link">Himalayas</a>
-                    <a href="/tagged/southeast-asia" class="geo-link">Southeast Asia</a>
-                    <a href="/tagged/siberia" class="geo-link">Siberia</a>
-                    <a href="/tagged/middle-east" class="geo-link">Middle East</a>
-                    <a href="/tagged/india" class="geo-link">India</a>
-                </div>
-            </div>
+        <!-- ETHNOGRAPHY/CULTURE SEGMENT -->
+        <div class="index-row" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/tagged/cult-monastic" class="tag-badge-anthropogenic">🎭 cult-monastic</a>
+            <span style="font-family: var(--font-clinical); font-size: 0.55rem; color: var(--text-muted);">[CULT_AXIS]</span>
+        </div>
+    </div>
+</div>
 
-            <div class="geo-category">
-                <div class="geo-category-title">Americas</div>
-                <div class="geo-list">
-                    <a href="/tagged/amazon" class="geo-link">Amazon</a>
-                    <a href="/tagged/patagonia" class="geo-link">Patagonia</a>
-                    <a href="/tagged/canada" class="geo-link">Canada</a>
-                    <a href="/tagged/mexico" class="geo-link">Mexico</a>
-                    <a href="/tagged/andes" class="geo-link">Andes</a>
-                    <a href="/tagged/caribbean" class="geo-link">Caribbean</a>
-                </div>
-            </div>
 
-            <div class="geo-category">
-                <div class="geo-category-title">Oceania</div>
-                <div class="geo-list">
-                    <a href="/tagged/australia" class="geo-link">Australia</a>
-                    <a href="/tagged/new-zealand" class="geo-link">New Zealand</a>
-                    <a href="/tagged/pacific" class="geo-link">Pacific Islands</a>
-                    <a href="/tagged/coral-triangle" class="geo-link">Coral Triangle</a>
-                    <a href="/tagged/papua-new-guinea" class="geo-link">Papua New Guinea</a>
-                </div>
-            </div>
+                <section class="hub" id="hub" hidden>
 
-            <div class="geo-category">
-                <div class="geo-category-title">Biomes</div>
-                <div class="geo-list">
-                    <a href="/tagged/rainforest" class="geo-link">Rainforest</a>
-                    <a href="/tagged/tundra" class="geo-link">Tundra</a>
-                    <a href="/tagged/desert" class="geo-link">Desert</a>
-                    <a href="/tagged/savanna" class="geo-link">Savanna</a>
-                    <a href="/tagged/temperate" class="geo-link">Temperate</a>
-                    <a href="/tagged/marine" class="geo-link">Marine</a>
-                </div>
-            </div>
-        </aside>
+    <h2 class="hub-title">Resources</h2>
+    <span class="coord hub-section-id">DATA_CORE // ID_001</span>
+    <div class="hub-grid">
+        <a class="hub-card" href="/"><span class="hub-icon">📷</span><h3>Main Archive</h3><p>Full field photography archive with filtering by region and type.</p></a>
+        <a class="hub-card" href="/archive"><span class="hub-icon">🗂️</span><h3>Photo Archive</h3><p>Chronological index of every published log.</p></a>
+        <a class="hub-card" href="https://www.tumblr.com/karsta-atlas"><span class="hub-icon">🔗</span><h3>Tumblr Profile</h3><p>Follow for updates and community interaction.</p></a>
+    </div>
 
-        <main class="content">
-            <header class="masthead">
-                <h2>Scientific Geographic Sandbox</h2>
-                <p>Field photography archive • spatial data logs • conservation observation index</p>
-                <div class="chip-row">
-                    <span class="chip">System online</span>
-                    <span class="chip">Data verified</span>
-                    <span class="chip">Archive active</span>
-                </div>
-            </header>
+    <h2 class="hub-title">Continental Archives</h2>
+    <span class="coord hub-section-id">DATA_CORE // ID_002</span>
+    <div class="hub-grid">
+        <a class="hub-card" href="/tagged/europe"><span class="hub-icon">🏔️</span><h3>Europe</h3><p>Balkans, Alps, Pyrenees, Caucasus, and Mediterranean ecosystems.</p></a>
+        <a class="hub-card" href="/tagged/africa"><span class="hub-icon">🦁</span><h3>Africa</h3><p>Sahara, Congo Basin, Great Rift Valley, Serengeti, and rainforests.</p></a>
+        <a class="hub-card" href="/tagged/asia"><span class="hub-icon">⛰️</span><h3>Asia</h3><p>Himalayas, Tibetan plateau, Gobi, Siberia, and monsoon systems.</p></a>
+        <a class="hub-card" href="/tagged/north-america"><span class="hub-icon">🌲</span><h3>North America</h3><p>Rockies, Great Plains, boreal forests, and wetland corridors.</p></a>
+        <a class="hub-card" href="/tagged/south-america"><span class="hub-icon">🌴</span><h3>South America</h3><p>Andes, Amazon, Pantanal, Atacama, and grasslands.</p></a>
+        <a class="hub-card" href="/tagged/oceania"><span class="hub-icon">🏝️</span><h3>Australia &amp; Oceania</h3><p>Outback, reef systems, temperate south, and Pacific islands.</p></a>
+        <a class="hub-card" href="/tagged/aquatic"><span class="hub-icon">🌊</span><h3>Aquatic Systems</h3><p>Pelagic basins, trenches, riverine systems, and coastal reefs.</p></a>
+        <a class="hub-card" href="/tagged/polar"><span class="hub-icon">❄️</span><h3>Polar Regions</h3><p>Arctic shelves, Greenland, Antarctica, and glacial margins.</p></a>
+    </div>
 
+    <h2 class="hub-title">Research Fields</h2>
+    <span class="coord hub-section-id">DATA_CORE // ID_003</span>
+    <div class="hub-grid">
+        <a class="hub-card" href="/tagged/geographic"><span class="hub-icon">🌐</span><h3>Geographic Atlas</h3><p>Spatial data, topography, and regional geography.</p></a>
+        <a class="hub-card" href="/tagged/fauna"><span class="hub-icon">🦌</span><h3>Fauna Logs</h3><p>Wildlife observation and species tracking.</p></a>
+        <a class="hub-card" href="/tagged/flora"><span class="hub-icon">🌿</span><h3>Flora Database</h3><p>Plant species and vegetation patterns.</p></a>
+        <a class="hub-card" href="/tagged/stressors"><span class="hub-icon">⚠️</span><h3>Regional Stressors</h3><p>Environmental pressures and conservation challenges.</p></a>
+        <a class="hub-card" href="/tagged/conservation"><span class="hub-icon">♻️</span><h3>Conservation</h3><p>Preservation, restoration projects, and initiatives.</p></a>
+        <a class="hub-card" href="/tagged/history"><span class="hub-icon">📜</span><h3>Historical Context</h3><p>Geological history and ecosystem evolution.</p></a>
+    </div>
+
+</section>
+        
+
+            <div class="atlas-map-grid">
+   <a class="atlas-card" href="/tagged/europe" data-biodiversity="72">
+    <h3>Europe</h3>
+    <span class="coord">SYS_LOG // 45.10N_02.15E</span>
+    <p>Balkans, Alps, Pyrenees, Caucasus, and Mediterranean corridors.</p>
+    <div class="viz"></div>
+</a>
+    <a class="atlas-card" href="/tagged/africa" data-biodiversity="88">
+        <h3>Africa</h3>
+        <span class="coord">SYS_LOG // 01.50N_20.30E</span>
+        <p>Sahara, Congo Basin, Great Rift, Serengeti, and Guinea rainforest systems.</p>    <div class="viz"></div>
+
+    </a>
+    <a class="atlas-card" href="/tagged/asia" data-biodiversity="81">
+        <h3>Asia</h3>
+        <span class="coord">SYS_LOG // 34.00N_90.00E</span>
+        <p>Himalayas, Tibetan plateau, Gobi, Siberia, and monsoon belts.</p>    <div class="viz"></div>
+
+    </a>
+    <a class="atlas-card" href="/tagged/north-america" data-biodiversity="64">
+        <h3>North America</h3>
+        <span class="coord">SYS_LOG // 45.00N_100.00W</span>
+        <p>Rockies, Great Plains, boreal forests, and wetland corridors.</p>    <div class="viz"></div>
+
+    </a>
+    <a class="atlas-card" href="/tagged/south-america" data-biodiversity="93">
+        <h3>South America</h3>
+        <span class="coord">SYS_LOG // 15.00S_60.00W</span>
+        <p>Andes, Amazon, Pantanal, Atacama, and southern grasslands.</p>    <div class="viz"></div>
+
+    </a>
+    <a class="atlas-card" href="/tagged/oceania" data-biodiversity="76">
+        <h3>Australia &amp; Oceania</h3>
+        <span class="coord">SYS_LOG // 25.00S_135.00E</span>
+        <p>Outback, reef systems, temperate south, Polynesia, and Melanesia.</p>    <div class="viz"></div>
+
+    </a>
+    <a class="atlas-card" href="/tagged/aquatic" data-biodiversity="85">
+        <h3>Aquatic Systems</h3>
+        <span class="coord">SYS_LOG // 00.00N_160.00W</span>
+        <p>Pelagic basins, deep-sea trenches, riverine systems, and coastal reefs.</p>    <div class="viz"></div>
+
+    </a>
+    <a class="atlas-card" href="/tagged/polar" data-biodiversity="38">
+        <h3>Polar Regions</h3>
+        <span class="coord">SYS_LOG // 90.00N_00.00E</span>
+        <p>Arctic shelves, Greenland, Antarctica, and glacial island margins.</p>    <div class="viz"></div>
+
+    </a>
+</div>
+
+                                  <section class="post-grid">
             {block:Posts}
-            <section class="dashboard-grid">
+
                 {block:Photo}
-                <article class="entry" id="post-{PostID}">
-                    <div class="entry-media">
+<article class="post-card" data-log-date="{MonthNumberWithZero}.{DayOfMonthWithZero}.{Year}" data-content-type="photo" data-tags="{block:Tags}{URLSafeTag} {/block:Tags}" data-title="{PhotoAlt}" data-image="{PhotoURL-HighRes}">
+                    <span class="content-type-badge badge-photo">📷 Photo</span>
+                    <div class="image-wrap">
                         <img src="{PhotoURL-500}" alt="{PhotoAlt}">
-                        <span class="media-label">View archive</span>
+                        <div class="image-overlay"><span>View archive</span></div>
                     </div>
-                    <div class="entry-body">
-                        {block:Title}<h3 class="entry-title">{Title}</h3>{/block:Title}
-                        <p class="entry-subhead">{block:Date}{Month} {DayOfMonth}, {Year}{/block:Date}</p>
-                        {block:Caption}<div class="entry-copy">{Caption}</div>{/block:Caption}
-
-                        <div class="ledger">
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ CONTINENT: ]</span>
-                                <span class="ledger-val">Europe</span>
+                    <div class="post-body">
+                        <h3 class="post-title">{block:PostSummary}{PostSummary}{/block:PostSummary}</h3>
+                        <p class="post-location">Geographic Documentation</p>
+                        <p class="post-excerpt">{block:Caption}{Caption}{/block:Caption}</p>
+                        <div class="metadata-ledger">
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ TYPE: ]</span>
+                                <span class="metadata-value">Photography</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ COORDINATES: ]</span>
-                                <span class="ledger-val">45.8158° / 15.9819°</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ CONTINENT: ]</span>
+                                <span class="metadata-value">Europe / Africa / Asia</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ TOPOGRAPHY: ]</span>
-                                <span class="ledger-val">Karst Plateau</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ COORDINATES: ]</span>
+                                <span class="metadata-value">44.8126° / 15.8687°</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ EVIDENCE: ]</span>
-                                <span class="ledger-val">Verified original field observation log</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ TOPOGRAPHY: ]</span>
+                                <span class="metadata-value">Karst Valley</span>
                             </div>
                         </div>
-
-                        <div class="entry-links">
-                            <a href="{Permalink}">{NoteCountWithLabel}</a>
-                            <a href="{ReblogURL}">Reblog</a>
-                            <a href="{Permalink}">Permalink</a>
-                        </div>
-
-                        {block:HasTags}
-                        <div class="tag-row">
-                            {block:Tags}
-                            <a href="{TagURL}">{Tag}</a>
-                            {/block:Tags}
-                        </div>
-                        {/block:HasTags}
-
-                        <div class="note-tag">{PostType} archive entry</div>
                     </div>
                 </article>
                 {/block:Photo}
 
+                
+                {block:Video}
+<article class="post-card" data-log-date="{MonthNumberWithZero}.{DayOfMonthWithZero}.{Year}" data-content-type="video" data-tags="{block:Tags}{URLSafeTag} {/block:Tags}" data-title="{VideoTitle}">
+                    <span class="content-type-badge badge-video">🎬 Video</span>
+                    <div class="media-wrap">
+                        {VideoEmbed}
+                    </div>
+                    <div class="post-body">
+                        <h3 class="post-title">{VideoTitle}</h3>
+                        <p class="post-location">Video Documentation</p>
+                        <p class="post-excerpt">{block:Caption}{Caption}{/block:Caption}</p>
+                        <div class="metadata-ledger">
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ TYPE: ]</span>
+                                <span class="metadata-value">Video</span>
+                            </div>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ FOCUS: ]</span>
+                                <span class="metadata-value">Conservation / Flora / Fauna</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                {/block:Video}
+
                 {block:Text}
-                <article class="entry" id="post-{PostID}">
-                    <div class="entry-body">
-                        {block:Title}<h3 class="entry-title">{Title}</h3>{/block:Title}
-                        <p class="entry-subhead">Field Log / Geographic Record</p>
-                        <div class="entry-copy">{Body}</div>
-
-                        <div class="ledger">
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ CONTINENT: ]</span>
-                                <span class="ledger-val">Europe / Africa / Australia</span>
+<article class="post-card" data-log-date="{MonthNumberWithZero}.{DayOfMonthWithZero}.{Year}" data-content-type="history" data-tags="{block:Tags}{URLSafeTag} {/block:Tags}">
+                    <span class="content-type-badge badge-history">📜 History</span>
+                    <div class="post-body">
+                        {block:Title}<h3 class="post-title">{Title}</h3>{/block:Title}
+                        <p class="post-location">Field Log / Geographic Note</p>
+                        <p class="post-excerpt">{Body}</p>
+                        <div class="metadata-ledger">
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ TYPE: ]</span>
+                                <span class="metadata-value">Historical Documentation</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ COORDINATES: ]</span>
-                                <span class="ledger-val">Latitude / longitude decimal archive</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ CONTINENT: ]</span>
+                                <span class="metadata-value">Europe / Africa / Australia</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ TOPOGRAPHY: ]</span>
-                                <span class="ledger-val">Topographic note analysis</span>
-                            </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ EVIDENCE: ]</span>
-                                <span class="ledger-val">Verified field documentation</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ FOCUS AREA: ]</span>
+                                <span class="metadata-value">Conservation / History / Business</span>
                             </div>
                         </div>
-
-                        <div class="entry-links">
-                            <a href="{Permalink}">{NoteCountWithLabel}</a>
-                            <a href="{ReblogURL}">Reblog</a>
-                            <a href="{Permalink}">Permalink</a>
-                        </div>
-
-                        {block:HasTags}
-                        <div class="tag-row">
-                            {block:Tags}
-                            <a href="{TagURL}">{Tag}</a>
-                            {/block:Tags}
-                        </div>
-                        {/block:HasTags}
-
-                        <div class="note-tag">{PostType} archive entry</div>
                     </div>
                 </article>
                 {/block:Text}
 
                 {block:Quote}
-                <article class="entry" id="post-{PostID}">
-                    <div class="entry-body">
-                        <h3 class="entry-title">Field Observation</h3>
-                        <p class="entry-subhead">Archive / Reflective Entry</p>
-                        <div class="entry-copy">"{Quote}"</div>
-                        <div class="entry-copy">{Source}</div>
-
-                        <div class="ledger">
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ CONTINENT: ]</span>
-                                <span class="ledger-val">Atlas resolution</span>
+<article class="post-card" data-log-date="{MonthNumberWithZero}.{DayOfMonthWithZero}.{Year}" data-content-type="initiative" data-tags="{block:Tags}{URLSafeTag} {/block:Tags}">
+                    <span class="content-type-badge badge-initiative">🌍 Initiative</span>
+                    <div class="post-body">
+                        <h3 class="post-title">Field Observation</h3>
+                        <p class="post-location">Archive / Reflective Entry</p>
+                        <p class="post-excerpt">"{Quote}"</p>
+                        <div class="metadata-ledger">
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ TYPE: ]</span>
+                                <span class="metadata-value">{Source}</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ COORDINATES: ]</span>
-                                <span class="ledger-val">Reference layer linked</span>
-                            </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ TOPOGRAPHY: ]</span>
-                                <span class="ledger-val">Analytical terrain summary</span>
-                            </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ EVIDENCE: ]</span>
-                                <span class="ledger-val">Field archive reference</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ FOCUS AREA: ]</span>
+                                <span class="metadata-value">Conservation / Ecosystem / Initiative</span>
                             </div>
                         </div>
-
-                        <div class="entry-links">
-                            <a href="{Permalink}">{NoteCountWithLabel}</a>
-                            <a href="{ReblogURL}">Reblog</a>
-                            <a href="{Permalink}">Permalink</a>
-                        </div>
-
-                        {block:HasTags}
-                        <div class="tag-row">
-                            {block:Tags}
-                            <a href="{TagURL}">{Tag}</a>
-                            {/block:Tags}
-                        </div>
-                        {/block:HasTags}
-
-                        <div class="note-tag">{PostType} archive entry</div>
                     </div>
                 </article>
                 {/block:Quote}
 
-                {block:Link}
-                <article class="entry" id="post-{PostID}">
-                    <div class="entry-body">
-                        <h3 class="entry-title">{Name}</h3>
-                        <p class="entry-subhead">Atlas Reference / Source</p>
-                        <div class="entry-copy"><a href="{URL}">{URL}</a></div>
-                        {block:Excerpt}<div class="entry-copy">{Excerpt}</div>{/block:Excerpt}
-
-                        <div class="ledger">
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ CONTINENT: ]</span>
-                                <span class="ledger-val">Atlas source</span>
+               {block:Link}
+<article class="post-card" data-log-date="{MonthNumberWithZero}.{DayOfMonthWithZero}.{Year}" data-content-type="initiative" data-tags="{block:Tags}{URLSafeTag} {/block:Tags}">
+                    <span class="content-type-badge badge-initiative">🌍 Initiative</span>
+                    <div class="post-body">
+                        <h3 class="post-title">{Name}</h3>
+                        <p class="post-location">Reference / External Source</p>
+                        <p class="post-excerpt">{Excerpt}</p>
+                        <div class="metadata-ledger">
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ TYPE: ]</span>
+                                <span class="metadata-value">Organization / Initiative</span>
                             </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ COORDINATES: ]</span>
-                                <span class="ledger-val">Reference layer linked</span>
-                            </div>
-                            <div class="ledger-row">
-                                <span class="ledger-key">[ EVIDENCE: ]</span>
-                                <span class="ledger-val">Documented citation index</span>
+                            <div class="metadata-row">
+                                <span class="metadata-category">[ FOCUS AREA: ]</span>
+                                <span class="metadata-value">Conservation / Business / Community</span>
                             </div>
                         </div>
-
-                        <div class="entry-links">
-                            <a href="{Permalink}">{NoteCountWithLabel}</a>
-                            <a href="{ReblogURL}">Reblog</a>
-                            <a href="{Permalink}">Permalink</a>
-                        </div>
-
-                        {block:HasTags}
-                        <div class="tag-row">
-                            {block:Tags}
-                            <a href="{TagURL}">{Tag}</a>
-                            {/block:Tags}
-                        </div>
-                        {/block:HasTags}
-
-                        <div class="note-tag">{PostType} archive entry</div>
                     </div>
                 </article>
                 {/block:Link}
-            </section>
-            {/block:Posts}
 
-            {block:Pagination}
-            <div class="footer-panel">
-                <p>{block:PreviousPage}<a href="{PreviousPage}">Previous</a>{/block:PreviousPage} / {CurrentPage} / {TotalPages} {block:NextPage}<a href="{NextPage}">Next</a>{/block:NextPage}</p>
-            </div>
-            {/block:Pagination}
+            {/block:Posts}
+            </section>
+
+            <footer class="content-footer">
+                <p class="footer-meta">KARSTA Scientific Geographic Sandbox | Data Architecture v1.0</p>
+            </footer>
         </main>
+
+        <aside class="sidebar-right">
+            <div class="region-filter-wrap">
+                <input
+                    id="regionFilter"
+                    class="region-filter"
+                    type="text"
+                    placeholder="Search regions..."
+                    aria-label="Search regions"
+                >
+            </div>
+
+            <div class="content-type-filter-wrap">
+                <span class="filter-label" id="filterLabel">Filter by type</span>
+<div class="filter-buttons-group" role="group" aria-labelledby="filterLabel">
+                    <button class="filter-btn" data-type="photo">📷 Photo</button>
+                    <button class="filter-btn" data-type="video">🎬 Video</button>
+                    <button class="filter-btn" data-type="flora">🌿 Flora</button>
+                    <button class="filter-btn" data-type="fauna">🦁 Fauna</button>
+                    <button class="filter-btn" data-type="history">📜 History</button>
+                    <button class="filter-btn" data-type="initiative">🌍 Initiative</button>
+                </div>
+            </div>
+
+           <div class="sidebar-right-inner">
+
+    <section class="region-section collapsed" id="region-europe">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>Europe</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/europe" data-region-name="All Europe"><span class="region-marker">●</span> All Europe</a></li>
+            <li class="region-item"><a href="/tagged/balkans" data-region-name="Balkans"><span class="region-marker">●</span> Balkans</a></li>
+            <li class="region-item"><a href="/tagged/carpathians" data-region-name="Carpathians"><span class="region-marker">●</span> Carpathians</a></li>
+            <li class="region-item"><a href="/tagged/alps" data-region-name="Alpine Region"><span class="region-marker">●</span> Alpine Region</a></li>
+            <li class="region-item"><a href="/tagged/mediterranean" data-region-name="Mediterranean"><span class="region-marker">●</span> Mediterranean</a></li>
+            <li class="region-item"><a href="/tagged/scandinavia" data-region-name="Scandinavia"><span class="region-marker">●</span> Scandinavia</a></li>
+            <li class="region-item"><a href="/tagged/british-isles" data-region-name="British Isles"><span class="region-marker">●</span> British Isles</a></li>
+            <li class="region-item"><a href="/tagged/pyrenees" data-region-name="Pyrenees"><span class="region-marker">●</span> Pyrenees</a></li>
+            <li class="region-item"><a href="/tagged/caucasus" data-region-name="Caucasus"><span class="region-marker">●</span> Caucasus</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-africa">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>Africa</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/africa" data-region-name="All Africa"><span class="region-marker">●</span> All Africa</a></li>
+            <li class="region-item"><a href="/tagged/sahara" data-region-name="Sahara"><span class="region-marker">●</span> Sahara</a></li>
+            <li class="region-item"><a href="/tagged/serengeti" data-region-name="Serengeti"><span class="region-marker">●</span> Serengeti</a></li>
+            <li class="region-item"><a href="/tagged/congo-basin" data-region-name="Congo Basin"><span class="region-marker">●</span> Congo Basin</a></li>
+            <li class="region-item"><a href="/tagged/kalahari" data-region-name="Kalahari"><span class="region-marker">●</span> Kalahari</a></li>
+            <li class="region-item"><a href="/tagged/great-rift-valley" data-region-name="Great Rift Valley"><span class="region-marker">●</span> Great Rift Valley</a></li>
+            <li class="region-item"><a href="/tagged/madagascar" data-region-name="Madagascar"><span class="region-marker">●</span> Madagascar</a></li>
+            <li class="region-item"><a href="/tagged/guinea-rainforest" data-region-name="Guinea Rainforest"><span class="region-marker">●</span> Guinea Rainforest</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-asia">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>Asia</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/asia" data-region-name="All Asia"><span class="region-marker">●</span> All Asia</a></li>
+            <li class="region-item"><a href="/tagged/himalayas" data-region-name="Himalayas"><span class="region-marker">●</span> Himalayas</a></li>
+            <li class="region-item"><a href="/tagged/tibetan-plateau" data-region-name="Tibetan Plateau"><span class="region-marker">●</span> Tibetan Plateau</a></li>
+            <li class="region-item"><a href="/tagged/siberia" data-region-name="Siberia"><span class="region-marker">●</span> Siberia</a></li>
+            <li class="region-item"><a href="/tagged/southeast-asia" data-region-name="Southeast Asia"><span class="region-marker">●</span> Southeast Asia</a></li>
+            <li class="region-item"><a href="/tagged/borneo" data-region-name="Borneo"><span class="region-marker">●</span> Borneo</a></li>
+            <li class="region-item"><a href="/tagged/middle-east" data-region-name="Middle East"><span class="region-marker">●</span> Middle East</a></li>
+            <li class="region-item"><a href="/tagged/central-asia" data-region-name="Central Asia"><span class="region-marker">●</span> Central Asia</a></li>
+            <li class="region-item"><a href="/tagged/gobi-desert" data-region-name="Gobi Desert"><span class="region-marker">●</span> Gobi Desert</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-north-america">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>North America</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/north-america" data-region-name="All North America"><span class="region-marker">●</span> All North America</a></li>
+            <li class="region-item"><a href="/tagged/rocky-mountains" data-region-name="Rocky Mountains"><span class="region-marker">●</span> Rocky Mountains</a></li>
+            <li class="region-item"><a href="/tagged/appalachians" data-region-name="Appalachians"><span class="region-marker">●</span> Appalachians</a></li>
+            <li class="region-item"><a href="/tagged/grand-canyon" data-region-name="Grand Canyon"><span class="region-marker">●</span> Grand Canyon</a></li>
+            <li class="region-item"><a href="/tagged/great-plains" data-region-name="Great Plains"><span class="region-marker">●</span> Great Plains</a></li>
+            <li class="region-item"><a href="/tagged/boreal-forest" data-region-name="Boreal Forest"><span class="region-marker">●</span> Boreal Forest</a></li>
+            <li class="region-item"><a href="/tagged/everglades" data-region-name="Everglades"><span class="region-marker">●</span> Everglades</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-south-america">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>South America</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/south-america" data-region-name="All South America"><span class="region-marker">●</span> All South America</a></li>
+            <li class="region-item"><a href="/tagged/amazon-basin" data-region-name="Amazon Basin"><span class="region-marker">●</span> Amazon Basin</a></li>
+            <li class="region-item"><a href="/tagged/andes-mountains" data-region-name="Andes Mountains"><span class="region-marker">●</span> Andes Mountains</a></li>
+            <li class="region-item"><a href="/tagged/patagonia" data-region-name="Patagonia"><span class="region-marker">●</span> Patagonia</a></li>
+            <li class="region-item"><a href="/tagged/atacama-desert" data-region-name="Atacama Desert"><span class="region-marker">●</span> Atacama Desert</a></li>
+            <li class="region-item"><a href="/tagged/pantanal" data-region-name="Pantanal"><span class="region-marker">●</span> Pantanal</a></li>
+            <li class="region-item"><a href="/tagged/cerrado-savanna" data-region-name="Cerrado Savanna"><span class="region-marker">●</span> Cerrado Savanna</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-oceania">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>Australia &amp; Oceania</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/oceania" data-region-name="All Australia & Oceania"><span class="region-marker">●</span> All Oceania</a></li>
+            <li class="region-item"><a href="/tagged/outback" data-region-name="Outback"><span class="region-marker">●</span> Outback</a></li>
+            <li class="region-item"><a href="/tagged/tropical-north" data-region-name="Tropical North"><span class="region-marker">●</span> Tropical North</a></li>
+            <li class="region-item"><a href="/tagged/great-barrier-reef" data-region-name="Great Barrier Reef"><span class="region-marker">●</span> Great Barrier Reef</a></li>
+            <li class="region-item"><a href="/tagged/temperate-south" data-region-name="Temperate South"><span class="region-marker">●</span> Temperate South</a></li>
+            <li class="region-item"><a href="/tagged/new-zealand" data-region-name="New Zealand"><span class="region-marker">●</span> New Zealand</a></li>
+            <li class="region-item"><a href="/tagged/polynesia" data-region-name="Polynesia"><span class="region-marker">●</span> Polynesia</a></li>
+            <li class="region-item"><a href="/tagged/melanesia" data-region-name="Melanesia"><span class="region-marker">●</span> Melanesia</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-aquatic">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>Aquatic Systems</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/aquatic" data-region-name="All Aquatic Systems"><span class="region-marker">●</span> All Aquatic</a></li>
+            <li class="region-item"><a href="/tagged/pelagic-basin" data-region-name="Pelagic Basin"><span class="region-marker">●</span> Pelagic Basin</a></li>
+            <li class="region-item"><a href="/tagged/coastal-zones" data-region-name="Coastal Zones"><span class="region-marker">●</span> Coastal Zones</a></li>
+            <li class="region-item"><a href="/tagged/riverine-systems" data-region-name="Riverine Systems"><span class="region-marker">●</span> Riverine Systems</a></li>
+            <li class="region-item"><a href="/tagged/coral-reef-zones" data-region-name="Coral Reef Zones"><span class="region-marker">●</span> Coral Reef Zones</a></li>
+            <li class="region-item"><a href="/tagged/kelp-forests" data-region-name="Kelp Forests"><span class="region-marker">●</span> Kelp Forests</a></li>
+            <li class="region-item"><a href="/tagged/deep-sea-trenches" data-region-name="Deep Sea Trenches"><span class="region-marker">●</span> Deep Sea Trenches</a></li>
+            <li class="region-item"><a href="/tagged/arctic-waters" data-region-name="Arctic Waters"><span class="region-marker">●</span> Arctic Waters</a></li>
+            <li class="region-item"><a href="/tagged/great-lakes" data-region-name="Great Lakes"><span class="region-marker">●</span> Great Lakes</a></li>
+        </ul>
+    </section>
+
+    <section class="region-section collapsed" id="region-polar">
+        <button class="region-section-header" type="button" aria-expanded="false">
+            <span>Polar Regions</span><span class="section-toggle">+</span>
+        </button>
+        <ul class="region-list">
+            <li class="region-item"><a href="/tagged/polar" data-region-name="All Polar Regions"><span class="region-marker">●</span> All Polar</a></li>
+            <li class="region-item"><a href="/tagged/arctic" data-region-name="Arctic"><span class="region-marker">●</span> Arctic</a></li>
+            <li class="region-item"><a href="/tagged/antarctica" data-region-name="Antarctica"><span class="region-marker">●</span> Antarctica</a></li>
+            <li class="region-item"><a href="/tagged/arctic-islands" data-region-name="Arctic Islands"><span class="region-marker">●</span> Arctic Islands</a></li>
+            <li class="region-item"><a href="/tagged/greenland" data-region-name="Greenland"><span class="region-marker">●</span> Greenland</a></li>
+        </ul>
+    </section>
+   </div> 
+    </aside>
+
+</div>
+<div class="data-ticker" id="dataTicker" data-manual-total="{text:Specimens Archived}" aria-label="Archive data log">
+    <div class="ticker-label"><span class="ticker-dot"></span>Live Log</div>
+    <div class="ticker-viewport">
+        <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+</div>
+
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <div class="lightbox-panel">
+            <div class="lightbox-image-wrap">
+                <img src="" alt="" id="lightboxImg">
+            </div>
+            <div class="lightbox-meta">
+                <h3 class="lightbox-title" id="lightboxTitle">Archive Reference</h3>
+                <div class="metadata-ledger">
+                    <div class="metadata-row">
+                        <span class="metadata-category">[ TYPE: ]</span>
+                        <span class="metadata-value">Flora / Fauna / Initiative / Historical</span>
+                    </div>
+                    <div class="metadata-row">
+                        <span class="metadata-category">[ CONTINENT: ]</span>
+                        <span class="metadata-value">Europe / Africa / Asia</span>
+                    </div>
+                    <div class="metadata-row">
+                        <span class="metadata-category">[ FOCUS AREA: ]</span>
+                        <span class="metadata-value">Conservation / History / Ecosystem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-<!-- PASTE BLANK TEXT SLOTS FOR TARGET REFACTORING HERE -->
+<div id="manifest-modal-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 14, 23, 0.85); backdrop-filter: blur(8px); z-index: 9999; justify-content: center; align-items: center;">
+    <!-- MODAL CARD WINDOW CONTENT SITS INSIDE HERE -->
+</div>
+
+    
+<!--Script Slot--!>
+
+<section class="operator" id="operator" hidden>
+<!-- --- MASTER SYSTEM OPERATOR MANIFEST MODAL --- -->
+<div id="manifest-modal-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 14, 23, 0.85); backdrop-filter: blur(8px); z-index: 9999; justify-content: center; align-items: center;">
+    
+    <div class="manifest-card" style="width: 90%; max-width: 580px; background: #121824; border: 1px solid var(--border-soft); border-radius: 8px; padding: 1.5rem; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+        
+        <!-- MODAL CLOSE COMMAND -->
+<div id="operator-manifest-close" style="position: absolute; top: 1rem; right: 1rem; font-family: var(--font-clinical); font-size: 0.6rem; color: var(--text-muted); cursor: pointer; border: 1px solid var(--border-soft); padding: 0.2rem 0.4rem; border-radius: 4px;">
+    [ ESC_CLOSE // ✕ ]
+</div>
+
+
+        <!-- HEADER DATA ROW -->
+        <div style="font-family: var(--font-clinical); font-size: 0.6rem; color: var(--karsta-gold); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">
+            // OPERATOR_MANIFESTO // DATA_LOG_SECURE
+        </div>
+
+        <h3 style="font-family: var(--font-clinical); font-size: 1.1rem; color: #FFFFFF; text-transform: uppercase; margin: 0 0 1rem 0; letter-spacing: 0.05em;">
+            The Genesis of Karsta Atlas
+        </h3>
+
+        <!-- COMPASSIONATE & TRUTHFUL STORY SECTION -->
+        <div class="manifesto-body-text" style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; max-height: 320px; overflow-y: auto; padding-right: 0.5rem; margin-bottom: 1rem;">
+            <p style="margin-top: 0;">
+                Welcome to the console. This platform functions as a sovereign geographic archive built entirely out of an unyielding, organic desire to see, analyze, and catalog the absolute parameters of our world.
+            </p>
+            <p>
+                Before compiling into Karsta Atlas, this data repository spent four continuous years in development as a silent research project. What began as a personal discipline of cross-referencing global photography with municipal records, environmental threat indices, and taxonomic databases has evolved into a functioning public proof-of-concept for custom web spatial data engineering.
+            </p>
+            <p style="margin-bottom: 0;">
+                Every dispatch ingested here is curated with absolute data integrity—proving that rigorous information architecture, academic provenance tracking, and deep regional mapping can transform raw, creative human curiosity into an authoritative, clinical digital workspace.
+            </p>
+        </div>
+
+        <!-- SYSTEM FOOTER MATRIX -->
+        <div style="font-family: var(--font-clinical); font-size: 0.58rem; color: var(--text-muted); border-top: 1px dashed var(--border-soft); padding-top: 0.8rem; display: flex; justify-content: space-between;">
+            <span>LOGGED: EST. NOVEMBER 2022</span>
+            <span style="color: var(--karsta-gold-dim);">MATRIX VERSION: 1.2.0</span>
+        </div>
+
+    </div>
+</div>
+
 
 </body>
 </html>
