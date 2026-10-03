@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{MetaDescription}">
+    <title>{Title}</title>
+  
+    <!-- PASTE BLANK TEXT SLOTS FOR TARGET REFACTORING HERE -->
+
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div>
+                    <div class="brand-shell">
+                        <div class="brand-avatar">
+                            <img src="{PortraitURL-128}" alt="{Title}">
+                        </div>
+                        <h1 class="brand-title">{Title}</h1>
+                        <p class="brand-copy">Scientific Geographic Sandbox</p>
+                    </div>
+
+                    <nav class="nav-wrap" aria-label="Main navigation">
+                        <a class="nav-link active" href="/"><span class="nav-sigil">[🔒]</span> MAIN_CORE</a>
+                        <a class="nav-link" href="/tagged/geographic"><span class="nav-sigil">[🌐]</span> GEOGRAPHIC_ATLAS</a>
+                        <a class="nav-link" href="/tagged/fauna"><span class="nav-sigil">[🌿]</span> FAUNA_LOGS</a>
+                        <a class="nav-link" href="/tagged/stressors"><span class="nav-sigil">[⚠️]</span> REGIONAL_STRESSORS</a>
+                        <a class="nav-link" href="/archive"><span class="nav-sigil">[📷]</span> PHOTO_ARCHIVE</a>
+                    </nav>
+
+                    <div class="theme-wrap">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <span class="toggle-dark">🌙 Dark Mode / Tamni Režim</span>
+                            <span class="toggle-light">☀️ Light Mode / Svijetli Režim</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="side-footer">
+                    <p>KARSTA v1.0</p>
+                    <p>Geographic Data Engine</p>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="sidebar-right">
+            <h3 class="geo-index-title">Geographic Index</h3>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Europe</div>
+                <div class="geo-list">
+                    <a href="/tagged/croatia" class="geo-link">Croatia</a>
+                    <a href="/tagged/iceland" class="geo-link">Iceland</a>
+                    <a href="/tagged/united-kingdom" class="geo-link">United Kingdom</a>
+                    <a href="/tagged/scandinavia" class="geo-link">Scandinavia</a>
+                    <a href="/tagged/balkans" class="geo-link">Balkans</a>
+                    <a href="/tagged/alps" class="geo-link">Alps</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Africa</div>
+                <div class="geo-list">
+                    <a href="/tagged/tanzania" class="geo-link">Tanzania</a>
+                    <a href="/tagged/kenya" class="geo-link">Kenya</a>
+                    <a href="/tagged/south-africa" class="geo-link">South Africa</a>
+                    <a href="/tagged/egypt" class="geo-link">Egypt</a>
+                    <a href="/tagged/madagascar" class="geo-link">Madagascar</a>
+                    <a href="/tagged/sahara" class="geo-link">Sahara</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Asia</div>
+                <div class="geo-list">
+                    <a href="/tagged/japan" class="geo-link">Japan</a>
+                    <a href="/tagged/himalayas" class="geo-link">Himalayas</a>
+                    <a href="/tagged/southeast-asia" class="geo-link">Southeast Asia</a>
+                    <a href="/tagged/siberia" class="geo-link">Siberia</a>
+                    <a href="/tagged/middle-east" class="geo-link">Middle East</a>
+                    <a href="/tagged/india" class="geo-link">India</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Americas</div>
+                <div class="geo-list">
+                    <a href="/tagged/amazon" class="geo-link">Amazon</a>
+                    <a href="/tagged/patagonia" class="geo-link">Patagonia</a>
+                    <a href="/tagged/canada" class="geo-link">Canada</a>
+                    <a href="/tagged/mexico" class="geo-link">Mexico</a>
+                    <a href="/tagged/andes" class="geo-link">Andes</a>
+                    <a href="/tagged/caribbean" class="geo-link">Caribbean</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Oceania</div>
+                <div class="geo-list">
+                    <a href="/tagged/australia" class="geo-link">Australia</a>
+                    <a href="/tagged/new-zealand" class="geo-link">New Zealand</a>
+                    <a href="/tagged/pacific" class="geo-link">Pacific Islands</a>
+                    <a href="/tagged/coral-triangle" class="geo-link">Coral Triangle</a>
+                    <a href="/tagged/papua-new-guinea" class="geo-link">Papua New Guinea</a>
+                </div>
+            </div>
+
+            <div class="geo-category">
+                <div class="geo-category-title">Biomes</div>
+                <div class="geo-list">
+                    <a href="/tagged/rainforest" class="geo-link">Rainforest</a>
+                    <a href="/tagged/tundra" class="geo-link">Tundra</a>
+                    <a href="/tagged/desert" class="geo-link">Desert</a>
+                    <a href="/tagged/savanna" class="geo-link">Savanna</a>
+                    <a href="/tagged/temperate" class="geo-link">Temperate</a>
+                    <a href="/tagged/marine" class="geo-link">Marine</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="masthead">
+                <h2>Scientific Geographic Sandbox</h2>
+                <p>Field photography archive • spatial data logs • conservation observation index</p>
+                <div class="chip-row">
+                    <span class="chip">System online</span>
+                    <span class="chip">Data verified</span>
+                    <span class="chip">Archive active</span>
+                </div>
+            </header>
+
+            {block:Posts}
+            <section class="dashboard-grid">
+                {block:Photo}
+                <article class="entry" id="post-{PostID}">
+                    <div class="entry-media">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}">
+                        <span class="media-label">View archive</span>
+                    </div>
+                    <div class="entry-body">
+                        {block:Title}<h3 class="entry-title">{Title}</h3>{/block:Title}
+                        <p class="entry-subhead">{block:Date}{Month} {DayOfMonth}, {Year}{/block:Date}</p>
+                        {block:Caption}<div class="entry-copy">{Caption}</div>{/block:Caption}
+
+                        <div class="ledger">
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ CONTINENT: ]</span>
+                                <span class="ledger-val">Europe</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ COORDINATES: ]</span>
+                                <span class="ledger-val">45.8158° / 15.9819°</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ TOPOGRAPHY: ]</span>
+                                <span class="ledger-val">Karst Plateau</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ EVIDENCE: ]</span>
+                                <span class="ledger-val">Verified original field observation log</span>
+                            </div>
+                        </div>
+
+                        <div class="entry-links">
+                            <a href="{Permalink}">{NoteCountWithLabel}</a>
+                            <a href="{ReblogURL}">Reblog</a>
+                            <a href="{Permalink}">Permalink</a>
+                        </div>
+
+                        {block:HasTags}
+                        <div class="tag-row">
+                            {block:Tags}
+                            <a href="{TagURL}">{Tag}</a>
+                            {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+
+                        <div class="note-tag">{PostType} archive entry</div>
+                    </div>
+                </article>
+                {/block:Photo}
+
+                {block:Text}
+                <article class="entry" id="post-{PostID}">
+                    <div class="entry-body">
+                        {block:Title}<h3 class="entry-title">{Title}</h3>{/block:Title}
+                        <p class="entry-subhead">Field Log / Geographic Record</p>
+                        <div class="entry-copy">{Body}</div>
+
+                        <div class="ledger">
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ CONTINENT: ]</span>
+                                <span class="ledger-val">Europe / Africa / Australia</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ COORDINATES: ]</span>
+                                <span class="ledger-val">Latitude / longitude decimal archive</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ TOPOGRAPHY: ]</span>
+                                <span class="ledger-val">Topographic note analysis</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ EVIDENCE: ]</span>
+                                <span class="ledger-val">Verified field documentation</span>
+                            </div>
+                        </div>
+
+                        <div class="entry-links">
+                            <a href="{Permalink}">{NoteCountWithLabel}</a>
+                            <a href="{ReblogURL}">Reblog</a>
+                            <a href="{Permalink}">Permalink</a>
+                        </div>
+
+                        {block:HasTags}
+                        <div class="tag-row">
+                            {block:Tags}
+                            <a href="{TagURL}">{Tag}</a>
+                            {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+
+                        <div class="note-tag">{PostType} archive entry</div>
+                    </div>
+                </article>
+                {/block:Text}
+
+                {block:Quote}
+                <article class="entry" id="post-{PostID}">
+                    <div class="entry-body">
+                        <h3 class="entry-title">Field Observation</h3>
+                        <p class="entry-subhead">Archive / Reflective Entry</p>
+                        <div class="entry-copy">"{Quote}"</div>
+                        <div class="entry-copy">{Source}</div>
+
+                        <div class="ledger">
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ CONTINENT: ]</span>
+                                <span class="ledger-val">Atlas resolution</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ COORDINATES: ]</span>
+                                <span class="ledger-val">Reference layer linked</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ TOPOGRAPHY: ]</span>
+                                <span class="ledger-val">Analytical terrain summary</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ EVIDENCE: ]</span>
+                                <span class="ledger-val">Field archive reference</span>
+                            </div>
+                        </div>
+
+                        <div class="entry-links">
+                            <a href="{Permalink}">{NoteCountWithLabel}</a>
+                            <a href="{ReblogURL}">Reblog</a>
+                            <a href="{Permalink}">Permalink</a>
+                        </div>
+
+                        {block:HasTags}
+                        <div class="tag-row">
+                            {block:Tags}
+                            <a href="{TagURL}">{Tag}</a>
+                            {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+
+                        <div class="note-tag">{PostType} archive entry</div>
+                    </div>
+                </article>
+                {/block:Quote}
+
+                {block:Link}
+                <article class="entry" id="post-{PostID}">
+                    <div class="entry-body">
+                        <h3 class="entry-title">{Name}</h3>
+                        <p class="entry-subhead">Atlas Reference / Source</p>
+                        <div class="entry-copy"><a href="{URL}">{URL}</a></div>
+                        {block:Excerpt}<div class="entry-copy">{Excerpt}</div>{/block:Excerpt}
+
+                        <div class="ledger">
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ CONTINENT: ]</span>
+                                <span class="ledger-val">Atlas source</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ COORDINATES: ]</span>
+                                <span class="ledger-val">Reference layer linked</span>
+                            </div>
+                            <div class="ledger-row">
+                                <span class="ledger-key">[ EVIDENCE: ]</span>
+                                <span class="ledger-val">Documented citation index</span>
+                            </div>
+                        </div>
+
+                        <div class="entry-links">
+                            <a href="{Permalink}">{NoteCountWithLabel}</a>
+                            <a href="{ReblogURL}">Reblog</a>
+                            <a href="{Permalink}">Permalink</a>
+                        </div>
+
+                        {block:HasTags}
+                        <div class="tag-row">
+                            {block:Tags}
+                            <a href="{TagURL}">{Tag}</a>
+                            {/block:Tags}
+                        </div>
+                        {/block:HasTags}
+
+                        <div class="note-tag">{PostType} archive entry</div>
+                    </div>
+                </article>
+                {/block:Link}
+            </section>
+            {/block:Posts}
+
+            {block:Pagination}
+            <div class="footer-panel">
+                <p>{block:PreviousPage}<a href="{PreviousPage}">Previous</a>{/block:PreviousPage} / {CurrentPage} / {TotalPages} {block:NextPage}<a href="{NextPage}">Next</a>{/block:NextPage}</p>
+            </div>
+            {/block:Pagination}
+        </main>
+    </div>
+
+<!-- PASTE BLANK TEXT SLOTS FOR TARGET REFACTORING HERE -->
+
+</body>
+</html>
